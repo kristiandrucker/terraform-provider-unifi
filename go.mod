@@ -8,6 +8,21 @@ toolchain go1.22.5
 // replace github.com/hashicorp/terraform-plugin-docs => ../../hashicorp/terraform-plugin-docs
 // replace github.com/hashicorp/terraform-plugin-sdk/v2 => ../../hashicorp/terraform-plugin-sdk
 
+// See testcontainers/testcontainers-go#632.
+replace (
+//	github.com/cucumber/godog => github.com/laurazard/godog v0.0.0-20220922095256-4c4b17abdae7
+//
+//	// For k8s dependencies, we use a replace directive, to prevent them being
+//	// upgraded to the version specified in containerd, which is not relevant to the
+//	// version needed.
+//	// See https://github.com/docker/buildx/pull/948 for details.
+//	// https://github.com/docker/buildx/blob/v0.8.1/go.mod#L62-L64
+	k8s.io/api => k8s.io/api v0.26.7
+	k8s.io/apimachinery => k8s.io/apimachinery v0.26.7
+	k8s.io/client-go => k8s.io/client-go v0.26.7
+	k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20221012153701-172d655c2280
+)
+
 require (
 	github.com/apparentlymart/go-cidr v1.1.0
 	github.com/deckarep/golang-set/v2 v2.6.0
