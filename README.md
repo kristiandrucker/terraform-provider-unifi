@@ -4,7 +4,7 @@
 
 **Note** You can't (for obvious reasons) configure your network while connected to something that may disconnect (like the WiFi). Use a hard-wired connection to your controller to use this provider.
 
-Functionality first needs to be added to the [go-unifi](https://github.com/paultyng/go-unifi) SDK.
+Functionality first needs to be added to the [go-unifi](https://github.com/kristiandrucker/go-unifi) SDK.
 
 ## Documentation
 
