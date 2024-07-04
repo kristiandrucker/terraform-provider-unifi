@@ -1,3 +1,4 @@
+version: 2
 builds:
 - env:
     - CGO_ENABLED=0
@@ -36,5 +37,3 @@ signs:
       - "${signature}"
       - "--detach-sign"
       - "${artifact}"
-changelog:
-  skip: true
